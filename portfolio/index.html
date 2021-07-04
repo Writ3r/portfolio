@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Lucas Wing's Portfolio</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <style type="text/css">
+    /* Necessary for full page carousel*/
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+          background: #1C2331!important;
+      }
+    }
+
+    /* allows higher scroll anchor positions */
+    .anchor {
+      scroll-margin-top: 150px;
+    }
+
+    /* allows using md bootstrap's navbar color */
+    .lucas-nav-bar-item.nav-link.active {
+      background-color: rgba(255,255,255,.1) !important;
+    }
+
+    /* arbitrary margin for tab pane headers */
+    .tab-pane-container {
+      margin-top: 40px;
+    }
+
+    /* arbitrary margin for title headers */
+    .title-margin {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="150" style="position: relative;">
+
+  <!-- Navbar -->
+  <nav id="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <strong>Lucas Wing</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="nav navbar-nav nav-pills mr-auto">
+          <li class="nav-item">
+            <a class="lucas-nav-bar-item nav-link" href="#home">Home
+              <!-- <span class="sr-only">(current)</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="lucas-nav-bar-item nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="lucas-nav-bar-item nav-link" href="#aboutMe">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="lucas-nav-bar-item nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="lucas-nav-bar-item nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="lucas-nav-bar-item nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/lucas-wing-314894104/" class="nav-link" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/Writ3r" class="nav-link border border-light rounded waves-effect waves-light"
+              target="_blank">
+              <i class="fab fa-github mr-2"></i>GitHub
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+  <!-- data-ride="carousel" -->
+  <!--Carousel Wrapper-->
+  <div id="home" class="carousel slide carousel-fade">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#home" data-slide-to="0" class="active"></li>
+      <li data-target="#home" data-slide-to="1"></li>
+      <li data-target="#home" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+              <source src="./assets/Letter - 18003.mp4" type="video/mp4" />
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Keep It Simple, Silly</strong>
+              </h1>
+
+              <p class="animated pulse infinite">
+                <strong>isEven = (x % 2 == 0)</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Code does not care about complexity, but the maintainers do.</strong>
+              </p>
+
+              <a class="btn btn-outline-white btn-lg" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" target="_blank">Source Code
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="./assets/Blue - 27239_Slomo.mp4" type="video/mp4" />
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Don't Repeat Yourself</strong>
+              </h1>
+
+              <p class="animated pulse infinite">
+                <strong>while ( true ) { System.out.println("I Will Not Repeat My Code") };</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Computers are not people. Repetition is unnecessary.</strong>
+              </p>
+
+              <a class="btn btn-outline-white btn-lg" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" target="_blank">Source Code
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="./assets/Network - 62965_Trim.mp4" type="video/mp4" />
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Try, Try Again</strong>
+              </h1>
+
+              <p class="animated pulse infinite">
+                <strong>while ( ! ( succeed = try() ) );</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Computers are deterministic, people are not. Try, Try Again.</strong>
+              </p>
+
+              <a class="btn btn-outline-white btn-lg" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" target="_blank">Source Code
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+       
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#home" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#home" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+</section>
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section id="portfolio" class="mt-5 wow fadeIn anchor">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <img src="./assets/work-731198_1920.jpg" class="img-fluid z-depth-1-half" alt="">
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Main heading -->
+            <h3 class="h3 mb-3">Portfolio</h3>
+            <p>Here's a bit about <strong>myself</strong>, my <strong>projects</strong>, and my <strong>experience</strong>.</p>
+            <p>Everyone likes to show off a little right?</p>
+            <!-- Main heading -->
+
+            <hr>
+
+            <p>
+              <strong>4</strong> years project experience,
+              <strong>2</strong> years enterprise experience,
+              <strong>24</strong> years of life experience.
+              <strong>Let's hope these numbers keep growing right?</strong>
+            </p>
+
+            <!-- CTA -->
+            <a target="_blank" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" class="btn btn-grey btn-md">RESUME DOC
+              <i class="fas fa-download animated swing infinite ml-1"></i>
+            </a>
+            <a target="_blank" href="https://docs.google.com/document/d/1ca1rWlQpQJGOK2GYhp-mz5E8NWMic65b9PZSQFZu1Ss/edit?usp=sharing" class="btn btn-grey btn-md">COVER LETTER
+              <i class="fas fa-download animated swing infinite ml-1"></i>
+            </a>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Main info-->
+
+      <hr class="my-5">
+
+      <!--Section: About Me-->
+      <section id="aboutMe" class="anchor">
+
+        <h3 class="h3 text-center mb-5">About Me</h3>
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <!--First row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-code fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Engineer</h5>
+                <p class="grey-text">Engineering new and interesting projects is my jam. It's satisfying turning an idea into a design.</p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <div style="height:30px"></div>
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-code-branch fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Developer</h5>
+                <p class="grey-text">Developing code to fit project specifications is delightful. I love implementing new and interesting designs.
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <div style="height:30px"></div>
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-graduation-cap fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Problem Solver</h5>
+                <p class="grey-text">
+                  Problems exist to be solved. My goal is to help that process along.
+                </p>
+              </div>
+            </div>
+            <!--/Third row-->
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+            <!--First row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-gamepad fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Gamer</h5>
+                <p class="grey-text">Destiny, League of Legends, Minecraft, etc. Have played, and love them all.</p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <div style="height:30px"></div>
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-hiking fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Hiker</h5>
+                <p class="grey-text">Mountains, valleys, deserts, fields. Hiking is my preferred method to experience it all.
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <div style="height:30px"></div>
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-walking fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Walker</h5>
+                <p class="grey-text">
+                  Turn on some music, chillax, and take a few mile walk. That's the life I like to live.
+                </p>
+              </div>
+            </div>
+            <!--/Third row-->
+
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section: About Me-->
+
+      <hr class="mb-5">
+
+      <!--Section: Experience-->
+      <section id="experience" class="anchor">
+
+        <h2 class="my-5 h3 text-center">Experience</h2>
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+          <!--Grid column-->
+          <div class="col-lg-12 col-md-12 px-4">
+            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                  aria-selected="true"><i class="fas fa-laptop-code indigo-text"></i> BAE Systems - Software Engineer 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                  aria-selected="false"><i class="fas fa-people-carry blue-text"></i> Marcellus Schools - Summer Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                  aria-selected="false"><i class="fas fa-users cyan-text"></i> Beak And Skiff - Worker</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-pane-container">
+                  <h5 class="feature-title title-margin">Information</h5>
+                  <p class="grey-text">
+                    Starting Position: Software Engineer 1 <br/> Period: June 2019 - PRESENT 
+                  </p>
+                  <h5 class="feature-title title-margin">Responsibilities</h5>
+                  <p class="grey-text">
+                    Primary responsibilty was building and mainting GXP Xplorer's Service infastructure. Secondary was doing cloud related changes, and making supporting webclient 
+                    changes if necessary. Also made dev support related tools to optimize efficiency during debugging and building.
+                  </p>
+                  <h5 class="feature-title title-margin">Awards</h5>
+                  <p class="grey-text">
+                    All of my performance reviews have had excellent scores thus far. In addition, achieved two Impact awards for my interest in our service infastructure, and cloud-related work during covid.
+                  </p>
+                  <h5 class="feature-title title-margin">Progression</h5>
+                  <p class="grey-text">
+                    I've progressed significantly in my ability to write enterprise-grade code in both the server-side and in cloud environments.
+                    On the service-side I've learned the ins and outs of REST endoints, Messaging systems, dependency injection, and service-oriented architecture.
+                    In the cloud, I've learned the basics of code containerization, along with management and deployment of those containers.
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="tab-pane-container">
+                  <h5 class="feature-title title-margin">Information</h5>
+                  <p class="grey-text">
+                    Starting Position: Summer Help <br/> Period: July 2012 - August 2018
+                  </p>
+                  <h5 class="feature-title title-margin">Responsibilities</h5>
+                  <p class="grey-text">
+                    Supporting the custodial staff in cleaning out the school district over the summer. Required teams of people working together to clean all classroom furnature, remove
+                    it from the classrooms, clean & wax the floors, then set the classroom back up how it was previously laid out.
+                  </p>
+                  <h5 class="feature-title title-margin">Awards</h5>
+                  <p class="grey-text">
+                    None offered for this job. The reward was coming back the next year if you did well enough.
+                  </p>
+                  <h5 class="feature-title title-margin">Progression</h5>
+                  <p class="grey-text">
+                    Learned about working in a team-based environment to accomplish tasks which are far too large to accomplish on my own.
+                    I also learned humility. My coworkers here were amazing, some of the best, most hardworking people I've met. Just because
+                    programming is more in-demand in the job market, doesn't make it any more of less of a job than that of custodial staff.
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="tab-pane-container">
+                  <h5 class="feature-title title-margin">Information</h5>
+                  <p class="grey-text">
+                    Starting Position: Worker <br/> Period: October 2011 - November 2012
+                  </p>
+                  <h5 class="feature-title title-margin">Responsibilities</h5>
+                  <p class="grey-text">
+                    Worked with a few other people to run the bounce houses over the weekends. We'd get a group of kids going,
+                    inform them of the rules, monitor them in the bounce houses for a few minutes, then bring them back to their parents.
+                  </p>
+                  <h5 class="feature-title title-margin">Awards</h5>
+                  <p class="grey-text">
+                    None offered for this job. The reward was coming back the next year if you did well enough.
+                  </p>
+                  <h5 class="feature-title title-margin">Progression</h5>
+                  <p class="grey-text">
+                    This was my first actual job. It taught me the ins/outs of working for a company, having real responsibility,
+                    and how to manage actually having extra money. This was an invaluable stepping stone for someone my age.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!--Section: Experience-->
+
+      <hr class="my-5">
+
+      <!--Section: Skills-->
+      <section id="skills" class="anchor">
+
+        <h2 class="my-5 h3 text-center">Skills</h2>
+
+        <!--First row-->
+        <div class="row features-small mb-5 mt-3 wow fadeIn">
+
+          <!--First column-->
+          <div class="col-md-4">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text animated pulse infinite"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Java</h6>
+                <p class="grey-text">
+                  4 years of experience<br />
+                  OSGI & Spring Boot frameworks<br />
+                  Service-oriented design
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text animated pulse infinite"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Databases</h6>
+                <p class="grey-text">
+                  4 years of experience <br />
+                  MySQL, PostgreSQL, MongoDB, Solr <br />
+                  SQL and NoSQL design
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text animated pulse infinite"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">JavaScript</h6>
+                <p class="grey-text">
+                  3 years of experience <br />
+                  React, Bootstrap, jQuery<br />
+                  Component-oriented design
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text animated pulse infinite"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Python</h6>
+                <p class="grey-text">
+                  2 years of experience <br />
+                  Flask, Dash, Tensorflow<br />
+                  Automation, Neural networks
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/First column-->
+
+          <!--Second column-->
+          <div class="col-md-4 flex-center">
+            <!-- <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid"> -->
+            <img src="./assets/numberSmall.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
+          </div>
+          <!--/Second column-->
+
+          <!--Third column-->
+          <div class="col-md-4 mt-2">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text animated pulse infinite"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Version Control</h6>
+                <p class="grey-text">
+                  2 years of experience <br />
+                  Git<br />
+                  Tourtoise, Github Desktop
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text animated pulse infinite"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Building</h6>
+                <p class="grey-text">
+                  2 years of experience <br />
+                  Ant, Maven, Docker<br />
+                  Traditional, and Cloud-oriented
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text animated pulse infinite"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">DevOps</h6>
+                <p class="grey-text">
+                  2 years of experience <br />
+                  Atlassian & Azure stacks<br />
+                  Issue estimation, PRs, Branch creation
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text animated pulse infinite"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Cloud</h6>
+                <p class="grey-text">
+                  1 year of experience <br />
+                  Docker, Kubernetes<br />
+                  Microservice-oriented design
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/Third column-->
+
+        </div>
+        <!--/First row-->
+
+      </section>
+      <!--Section: Skills-->
+
+      <hr class="mb-5">
+
+      <!--Section: Projects-->
+      <section id="projects" class="anchor">
+
+        <h2 class="my-5 h3 text-center">Projects</h2>
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+          <!--Grid column-->
+          <div class="col-lg-12 col-md-12 px-4">
+            <div class="row">
+              <div class="col-3">
+                <div class="nav flex-column nav-pills nav-justified" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    Mailaway
+                  </a>
+                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    Master Plan
+                  </a>
+                  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                    KSSPE Inventory Management
+                  </a>
+                  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    Professional Clothes Closet
+                  </a>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <h5 class="feature-title" >Information</h5>
+                    <p class="grey-text">
+                      Project Name: Mailaway <br/>
+                      Authors: Lucas Wing  <br/> 
+                      Period: April 2021 - PRESENT
+                    </p>
+                    <h5 class="feature-title title-margin">Overview</h5>
+                    <p class="grey-text">
+                      API-powered throwaway email account service. Will have a minimal frontend, and developer-centric backend for
+                      third-party integrators to use it in their own solutions. It's backed by Wildduck, a MongoDB backed extremely scalable email solution.
+                    </p>
+                    <h5 class="feature-title title-margin">Technologies</h5>
+                    <p class="grey-text">
+                      Languages: Java, JavaScript, HTML, CSS <br/>
+                      Frameworks: Spring-Boot, React, Bootstrap <br/>
+                      Deployment: Docker <br/>
+                      Documentation: OpenAPI <br/>
+                      Database: MongoDB <br/>
+                      Metrics: Prometheus/Grafana
+                    </p>
+                    <h5 class="feature-title title-margin">Resources</h5>
+                    <p class="grey-text">
+                      Current OpenAPI docs <br/>
+                      Metrics Setup
+                    </p>
+                    <h5 class="feature-title title-margin">Concluding Thoughts</h5>
+                    <p class="grey-text">
+                      The primary purpose of this project is to learn how spring-boot works.
+                      I doubt this'll ever kick off enough to actually be profitable, and that's alright.
+                      If I can get real-world experience with spring-boot, I'm happy with the outcome.
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <h5 class="feature-title">Information</h5>
+                    <p class="grey-text">
+                      Project Name: Master Plan <br/>
+                      Authors: Lucas Wing  <br/> 
+                      Period: January 2019 - January 2020
+                    </p>
+                    <h5 class="feature-title title-margin">Overview</h5>
+                    <p class="grey-text">
+                      Financial projection service. Takes a user's current financial state, and projects it into the future.
+                      Useful for testing different financial outcomes of your decisions, and not requiring experience with excel.
+                    </p>
+                    <h5 class="feature-title title-margin">Technologies</h5>
+                    <p class="grey-text">
+                      Languages: PHP, Javascript, HTML, CSS <br/>
+                      Frameworks: Bootstrap <br/>
+                      Database: MySQL <br/>
+                    </p>
+                    <h5 class="feature-title title-margin">Resources</h5>
+                    <p class="grey-text">
+                      Website
+                    </p>
+                    <h5 class="feature-title title-margin">Concluding Thoughts</h5>
+                    <p class="grey-text">
+                      This project was my first major solo endevor to create an actually working webapp.
+                      Was it optimal? No. Is there a lot of bugs? Probabily. But it served its purpose.
+                      In the next few years at some point I'll likely come back and revamp this project.
+                      The underlying idea is good, it just needs better execution and functionality.
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <h5 class="feature-title">Information</h5>
+                    <p class="grey-text">
+                      Project Name: KSSPE Department Inventory Management System<br/>
+                      Authors: Lucas Wing, Matt Frichie, Nick Bernard, Liam Allport<br/>
+                      Period: August 2018 - May 2019
+                    </p>
+                    <h5 class="feature-title title-margin">Overview</h5>
+                    <p class="grey-text">
+                      Equipment reservation system for Brockport's KSSPE department. This was a senior project
+                      done at the behest of our Computer Science department chair due to our excellent work on
+                      Clothes Closet project to replace the current excel solution.
+                    </p>
+                    <h5 class="feature-title title-margin">Technologies</h5>
+                    <p class="grey-text">
+                      Languages: Java <br/>
+                      Frameworks: Custom MVC solution <br/>
+                      Database: MySQL <br/>
+                    </p>
+                    <h5 class="feature-title title-margin">Resources</h5>
+                    <p class="grey-text">
+                      Github<br/>
+                      ERD<br/>
+                      Use Cases<br/>
+                      Sequence Diagrams<br/>
+                      State Diagram<br/>
+                      Pictures
+                    </p>
+                    <h5 class="feature-title title-margin">Concluding Thoughts</h5>
+                    <p class="grey-text">
+                      Our small team did well at this project. It was a great learning experience for us
+                      to refine our Java skills before moving into the professional world.
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <h5 class="feature-title">Information</h5>
+                    <p class="grey-text">
+                      Project Name:  Brockport Professional Clothes Closet<br/>
+                      Authors: Lucas Wing, Nick Bernard, Matt Frichie, Liam Allport, Noah Tyler, Rolland Quentin, Nicholas Fontanet, Kevin Fortes<br/>
+                      Period: August 2017 - June 2018
+                    </p>
+                    <h5 class="feature-title title-margin">Overview</h5>
+                    <p class="grey-text">
+                      Clothing reservation system for Professional Clothes closet. This was a class project which
+                      spanned multiple semesters into a follow-up class. The first semester we designed the project
+                      the second semester we went about actually implementing it with our teams.
+                    </p>
+                    <h5 class="feature-title title-margin">Technologies</h5>
+                    <p class="grey-text">
+                      Languages: Java <br/>
+                      Frameworks: Custom MVC solution <br/>
+                      Database: MySQL <br/>
+                    </p>
+                    <h5 class="feature-title title-margin">Resources</h5>
+                    <p class="grey-text">
+                      Github<br/>
+                      Use Cases<br/>
+                      Sequence Diagrams<br/>
+                      State Diagram<br/>
+                      Pictures
+                    </p>
+                    <h5 class="feature-title title-margin">Concluding Thoughts</h5>
+                    <p class="grey-text">
+                      This was a great first project to familiarize us with the inner-workings and design process
+                      for client-side technologies. It was definetly rough by professional standards, but this
+                      was primarily a learning experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!--Section: Projects-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    <div class="pt-4">
+      <a class="btn btn-outline-white" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" target="_blank" role="button">Resume Doc
+        <i class="fas fa-download ml-2 animated swing infinite"></i>
+      </a>
+      <a class="btn btn-outline-white" href="https://docs.google.com/document/d/1ca1rWlQpQJGOK2GYhp-mz5E8NWMic65b9PZSQFZu1Ss/edit?usp=sharing" target="_blank" role="button">Cover Letter
+        <i class="fas fa-download ml-2 animated swing infinite"></i>
+      </a>
+    </div>
+    <!--/.Call to action-->
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+
+      <a href="https://github.com/Writ3r" target="_blank">
+        <i class="fab fa-github mr-3"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/lucas-wing-314894104/" target="_blank">
+        <i class="fab fa-linkedin mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2021 Copyright:
+      <a href="https://lucaswing.com" target="_blank"> lucaswing.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    $( document ).ready(function() {
+      new WOW().init()
+    });
+  </script>
+</body>
+
+</html>
