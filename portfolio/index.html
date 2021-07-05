@@ -14,54 +14,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="css/style.min.css" rel="stylesheet">
-
-  <style type="text/css">
-    /* Necessary for full page carousel*/
-    html,
-    body,
-    header,
-    .view {
-      height: 100%;
-    }
-
-    /* Carousel*/
-    .carousel,
-    .carousel-item,
-    .carousel-item.active {
-      height: 100%;
-    }
-    .carousel-inner {
-      height: 100%;
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-          background: #1C2331!important;
-      }
-    }
-
-    /* allows higher scroll anchor positions */
-    .anchor {
-      scroll-margin-top: 150px;
-    }
-
-    /* allows using md bootstrap's navbar color */
-    .lucas-nav-bar-item.nav-link.active {
-      background-color: rgba(255,255,255,.1) !important;
-    }
-
-    /* arbitrary margin for tab pane headers */
-    .tab-pane-container {
-      margin-top: 40px;
-    }
-
-    /* arbitrary margin for title headers */
-    .title-margin {
-      margin-top: 20px;
-    }
-  </style>
+  <!-- custom styles -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example2" data-offset="150" style="position: relative;">
@@ -169,7 +123,7 @@
                 <strong>Code does not care about complexity, but the maintainers do.</strong>
               </p>
 
-              <a class="btn btn-outline-white btn-lg" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" target="_blank">Source Code
+              <a class="btn btn-outline-white btn-lg" href="https://github.com/Writ3r/portfolio" target="_blank">Source Code
                 <i class="fas fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -208,7 +162,7 @@
                 <strong>Computers are not people. Repetition is unnecessary.</strong>
               </p>
 
-              <a class="btn btn-outline-white btn-lg" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" target="_blank">Source Code
+              <a class="btn btn-outline-white btn-lg" href="https://github.com/Writ3r/portfolio" target="_blank">Source Code
                 <i class="fas fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -244,10 +198,10 @@
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>Computers are deterministic, people are not. Try, Try Again.</strong>
+                <strong>Computers are deterministic, people are not. Try, try again.</strong>
               </p>
 
-              <a class="btn btn-outline-white btn-lg" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" target="_blank">Source Code
+              <a class="btn btn-outline-white btn-lg" href="https://github.com/Writ3r/portfolio" target="_blank">Source Code
                 <i class="fas fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -767,9 +721,10 @@
                       Metrics: Prometheus/Grafana
                     </p>
                     <h5 class="feature-title title-margin">Resources</h5>
-                    <p class="grey-text">
-                      Current OpenAPI docs <br/>
-                      Metrics Setup
+                    <p>
+                      <a class="custom-link" data-toggle="modal" data-target=".mailaway-pics-model">
+                        <i class="fas fa-folder-open ml-2 animated pulse infinite"></i> Pictures
+                      </a>
                     </p>
                     <h5 class="feature-title title-margin">Concluding Thoughts</h5>
                     <p class="grey-text">
@@ -797,8 +752,13 @@
                       Database: MySQL <br/>
                     </p>
                     <h5 class="feature-title title-margin">Resources</h5>
-                    <p class="grey-text">
-                      Website
+                    <p>
+                      <a class="custom-link" href="https://www.master-plan.me/" target="_blank">
+                        <i class="fas fa-link ml-2 animated pulse infinite"></i> Website
+                      </a><br/>
+                      <a class="custom-link" data-toggle="modal" data-target=".master-plan-pics-model">
+                        <i class="fas fa-folder-open ml-2 animated pulse infinite"></i> Pictures
+                      </a>
                     </p>
                     <h5 class="feature-title title-margin">Concluding Thoughts</h5>
                     <p class="grey-text">
@@ -828,13 +788,25 @@
                       Database: MySQL <br/>
                     </p>
                     <h5 class="feature-title title-margin">Resources</h5>
-                    <p class="grey-text">
-                      Github<br/>
-                      ERD<br/>
-                      Use Cases<br/>
-                      Sequence Diagrams<br/>
-                      State Diagram<br/>
-                      Pictures
+                    <p>
+                      <a class="custom-link" href="https://github.com/Writ3r/KSSPE-Project" target="_blank">
+                        <i class="fas fa-link ml-2 animated pulse infinite"></i> Github
+                      </a><br/>
+                      <a class="custom-link" href="./assets/ksspe/ERD.jpeg" target="_blank">
+                        <i class="fas fa-link ml-2 animated pulse infinite"></i> ERD
+                      </a><br/>
+                      <a class="custom-link" href="https://docs.google.com/document/d/1xK-V8XTjA9ArEFn9ioepw284b4NFE3bnGWWVYr8B2Yc/edit?usp=sharing" target="_blank">
+                        <i class="fas fa-link ml-2 animated pulse infinite"></i> Use Cases
+                      </a><br/>
+                      <a class="custom-link" href="./assets/ksspe/KSSPECompletedSeqDiagrams.pdf" target="_blank">
+                        <i class="fas fa-link ml-2 animated pulse infinite"></i> Sequence Diagrams
+                      </a><br/>
+                      <a class="custom-link" href="./assets/ksspe/State.jpg" target="_blank">
+                        <i class="fas fa-link ml-2 animated pulse infinite"></i> State Diagram
+                      </a><br/>
+                      <a class="custom-link" data-toggle="modal" data-target=".ksspe-pics-model">
+                        <i class="fas fa-folder-open ml-2 animated pulse infinite"></i> Pictures
+                      </a>
                     </p>
                     <h5 class="feature-title title-margin">Concluding Thoughts</h5>
                     <p class="grey-text">
@@ -862,12 +834,22 @@
                       Database: MySQL <br/>
                     </p>
                     <h5 class="feature-title title-margin">Resources</h5>
-                    <p class="grey-text">
-                      Github<br/>
-                      Use Cases<br/>
-                      Sequence Diagrams<br/>
-                      State Diagram<br/>
-                      Pictures
+                    <p>
+                      <a class="custom-link" href="https://github.com/ntyler1/ClothesClosetProject" target="_blank">
+                        <i class="fas fa-link ml-2 animated pulse infinite"></i> Github
+                      </a><br/>
+                      <a class="custom-link" href="https://docs.google.com/document/d/1V_fU_oXI0yl9uo8K4Jrjk2z4EVXhlHpVYsNIxQbXJYs/edit?usp=sharing" target="_blank">
+                        <i class="fas fa-link ml-2 animated pulse infinite"></i> Use Cases
+                      </a><br/>
+                      <a class="custom-link" href="./assets/clothescloset/Team6-Sequence.pdf" target="_blank">
+                        <i class="fas fa-link ml-2 animated pulse infinite"></i> Sequence Diagrams
+                      </a><br/>
+                      <a class="custom-link" href="./assets/clothescloset/stateDiagram.jpg" target="_blank">
+                        <i class="fas fa-link ml-2 animated pulse infinite"></i> State Diagram
+                      </a><br/>
+                      <a class="custom-link" data-toggle="modal" data-target=".clothes-closet-pics-model">
+                        <i class="fas fa-folder-open ml-2 animated pulse infinite"></i> Pictures
+                      </a>
                     </p>
                     <h5 class="feature-title title-margin">Concluding Thoughts</h5>
                     <p class="grey-text">
@@ -944,6 +926,141 @@
       new WOW().init()
     });
   </script>
+
+  <div class="modal fade clothes-closet-pics-model" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="carousel-clothes-closet-pics" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./assets/clothescloset/ClothesClosetItem.png" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/clothescloset/ClothesClosetMainMenue.png" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="carousel-control-prev" href="#carousel-clothes-closet-pics" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-clothes-closet-pics" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade ksspe-pics-model" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="carousel-ksspe-pics" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./assets/ksspe/LoginScreen.PNG" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/ksspe/KSSPEMainMenBetter.PNG" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="carousel-control-prev" href="#carousel-ksspe-pics" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-ksspe-pics" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade mailaway-pics-model" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="carousel-mailaway-pics" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./assets/mailaway/swagger-endpoints.PNG" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/mailaway/create-account.PNG" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/mailaway/portainer.PNG" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="carousel-control-prev" href="#carousel-mailaway-pics" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-mailaway-pics" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade master-plan-pics-model" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="carousel-master-plan-pics" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./assets/masterplan/About.PNG" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/masterplan/MasterDashboard.PNG" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/masterplan/Assets.PNG" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="carousel-control-prev" href="#carousel-master-plan-pics" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-master-plan-pics" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

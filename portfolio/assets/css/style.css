@@ -1,0 +1,73 @@
+.carousel,
+.carousel .carousel-inner,
+.carousel .carousel-inner .active,
+.carousel .carousel-inner .carousel-item,
+.view,
+body,
+html {
+    height: 100%;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.page-footer,
+.top-nav-collapse {
+    background-color: #1c2331;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1c2331;
+    }
+}
+
+/* Necessary for full page carousel*/
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+/* Carousel*/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+      background: #1C2331!important;
+  }
+}
+
+/* allows higher scroll anchor positions */
+.anchor {
+  scroll-margin-top: 150px;
+}
+
+/* allows using md bootstrap's navbar color */
+.lucas-nav-bar-item.nav-link.active {
+  background-color: rgba(255,255,255,.1) !important;
+}
+
+/* arbitrary margin for tab pane headers */
+.tab-pane-container {
+  margin-top: 40px;
+}
+
+/* arbitrary margin for title headers */
+.title-margin {
+  margin-top: 20px;
+}
+
+/* fix link color from blue */
+.custom-link {
+  color: rgba(0,0,0,.9)
+}
+
+/* fun button shake */
+.btn:hover {animation: swing 1s linear .3s infinite;}
