@@ -1,0 +1,91 @@
+.carousel,
+.carousel .carousel-inner,
+.carousel .carousel-inner .active,
+.carousel .carousel-inner .carousel-item,
+.view,
+body,
+html {
+    height: 100%;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2)!important;
+}
+.page-footer,
+.top-nav-collapse {
+    background-color: #1c2331!important;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1c2331!important;
+    }
+}
+
+/* Necessary for full page carousel*/
+.carousel {
+  height: 100vh;
+  width: 100%;
+  overflow:hidden;
+}
+.carousel .carousel-inner {
+  height:100%;    
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+      background: #1C2331!important;
+  }
+}
+
+/* allows higher scroll anchor positions */
+.anchor {
+  scroll-margin-top: 100px;
+}
+
+/* allows using md bootstrap's navbar color */
+.lucas-nav-bar-item.nav-link.active {
+  background-color: rgba(255,255,255,.1) !important;
+}
+
+/* arbitrary margin for tab pane headers */
+.tab-pane-container {
+  margin-top: 40px;
+}
+
+/* arbitrary margin for title headers */
+.title-margin {
+  margin-top: 20px;
+}
+
+/* fix link color from blue */
+.custom-link {
+  color: rgba(0,0,0,.9)
+}
+
+/* fix pills and tabs to look more in-line with mdbootstrap's theme */
+
+.nav-link {
+  color:#fff
+}
+
+.lucas-pills.nav-pills .nav-link {
+    color: rgba(0,0,0,.9);
+    border: 1px solid #dee2e6 !important;
+}
+
+.lucas-pills.nav-pills .nav-link.active {
+    background-color: rgba(0,0,0,.8) !important;
+    color: rgba(255,255,255,.9)
+}
+
+.lucas-tabs.nav-tabs .nav-link {
+    color: rgba(0,0,0,.9);
+    border: 1px solid #dee2e6 !important;
+}
+
+.lucas-tabs.nav-tabs .nav-link.active {
+    background-color: rgba(0,0,0,.8) !important;
+    color: rgba(255,255,255,.9)
+}
+
+/* fun button shake */
+.btn:hover {animation: swing 1s linear .3s infinite;}
