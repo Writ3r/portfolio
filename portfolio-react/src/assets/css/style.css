@@ -47,6 +47,17 @@ html {
 }
 
 /* arbitrary margin for tab pane headers */
+.about-me-item {
+  margin-top: 30px;
+}
+
+/* arbitrary margin for tab pane headers */
+.skills-item {
+  margin-top: 15px;
+}
+
+
+/* arbitrary margin for tab pane headers */
 .tab-pane-container {
   margin-top: 40px;
 }

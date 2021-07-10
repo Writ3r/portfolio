@@ -2,6 +2,7 @@ import './assets/css/style.css';
 import TopNavigation from './components/NavBar';
 import MainCarousel from './components/MainCarousel';
 import MainContents from './components/MainContents';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <TopNavigation />
         <MainCarousel />
         <MainContents />
+        <Footer />
     </div>
   );
 }
