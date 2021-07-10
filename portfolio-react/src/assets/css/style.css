@@ -21,12 +21,12 @@ html {
 }
 
 /* Necessary for full page carousel*/
-.carousel {
+.carousel.carouselPage {
   height: 100vh;
   width: 100%;
   overflow:hidden;
 }
-.carousel .carousel-inner {
+.carousel.carouselPage .carousel-inner {
   height:100%;    
 }
 
@@ -46,14 +46,19 @@ html {
   background-color: rgba(255,255,255,.1) !important;
 }
 
-/* arbitrary margin for tab pane headers */
+/* arbitrary margin for about me items */
 .about-me-item {
   margin-top: 30px;
 }
 
-/* arbitrary margin for tab pane headers */
+/* arbitrary margin for skill items */
 .skills-item {
   margin-top: 15px;
+}
+
+/* arbitrary margin for Projects */
+.projects-pills {
+  margin-bottom:20px;
 }
 
 

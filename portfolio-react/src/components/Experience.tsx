@@ -29,17 +29,17 @@ class Experience extends Component {
               <Router>
                 <MDBNav className="lucas-tabs nav-tabs nav-justified">
                   <MDBNavItem>
-                    <MDBNavLink isActive={() => false} link to="#" className="h-100" role="tab" active={this.state.activeItem === "1"} onClick={this.toggle("1")}>
+                    <MDBNavLink link to="#" className="h-100" role="tab" active={this.state.activeItem === "1"} onClick={this.toggle("1")}>
                       <i className="fas fa-laptop-code indigo-text"></i> BAE Systems - Software Engineer 2
                     </MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink isActive={() => false} link to="#" className="h-100" role="tab" active={this.state.activeItem === "2"} onClick={this.toggle("2")}>
+                    <MDBNavLink link to="#" className="h-100" role="tab" active={this.state.activeItem === "2"} onClick={this.toggle("2")}>
                       <i className="fas fa-people-carry blue-text"></i> Marcellus Schools - Summer Help
                     </MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink isActive={() => false} link to="#" className="h-100"role="tab" active={this.state.activeItem === "3"} onClick={this.toggle("3")}>
+                    <MDBNavLink link to="#" className="h-100"role="tab" active={this.state.activeItem === "3"} onClick={this.toggle("3")}>
                         <i className="fas fa-users cyan-text"></i> Beak And Skiff - Worker
                     </MDBNavLink>
                   </MDBNavItem>
