@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { NavLink as NavLinkRouter } from 'react-router-dom';
-import { MDBWaves as Waves, MDBLink} from 'mdbreact';
+import { MDBWaves as Waves} from 'mdbreact';
+import MDBLink from '../Link'
 
 /*
  THIS IS JUST A REPLACEMENT TO GET AROUND mdreact's CURRENT 5.0.2 ISSUE WITH LINK/NAVLINK build
