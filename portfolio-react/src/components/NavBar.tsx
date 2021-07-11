@@ -6,7 +6,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 /*
 NOTES:
   - The nav is PILLS to allow for scrollspy and avoid needing mdb pro
-  - isActive={() => false} is used to bypass auto-active on NavLink when pointing at self.
   - handleScroll fixes the scroll to function without mdb pro
 */
 
@@ -22,28 +21,68 @@ class NavbarPage extends Component {
       window.addEventListener('scroll', this.handleScroll);
   }
 
-  componentWillUnmount(){
+  componentWillUnmount() {
       window.removeEventListener('scroll', this.handleScroll);
   }
 
+  isInView(el:any) {
+    const box = el.getBoundingClientRect();
+    return box.top < window.innerHeight && box.bottom >= 0;
+  }
+
   handleScroll = () => {
+    //scroll pos in page
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    var footer = document.querySelector("footer");
+    var footerInView = true ? footer && this.isInView(footer) : false
+
+    // scrollspy since mdbootstrap requires pro version
+    var section = document.querySelectorAll(".pageAnchor");
+    section.forEach(function(e) {
+      if (e instanceof HTMLElement) {
+        if (e.offsetTop - 100 <= scrollTop || footerInView && e.id === "projects") {
+          var ele = document.querySelector('.lucas-nav-bar-item.active')
+          if (ele) {
+            ele.className = ele.className.replace("active", "")
+          }
+          var ele2 = document.querySelector('a[href*=' + e.id + ']')
+          if (ele2) {
+            ele2.className += " active"
+          }
+        }
+      }
+    })
+
+    // carousel at top of page set class
     this.setState({
       atTop: true ? (scrollTop === 0) : false
     });
   }
-  
-  togglePills = (tab : string) => (e: React.ChangeEvent<HTMLInputElement>) => {
+
+  toggleCollapse = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  }
+
+  togglePills = (tab : string, location: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
+    this.moveToLocation(location)
+    /*
     if (this.state.activePill !== tab) {
       this.setState({
         activePill: tab
       });
-    }
+    } */
   };
 
-  toggleCollapse = () => {
-    this.setState({ isOpen: !this.state.isOpen });
+  moveToLocation = (location: string) => {
+    const element = document.getElementById(location);
+    setTimeout(() => {
+      window.scrollTo({
+        behavior: element ? "smooth" : "auto",
+        top: element ? element.offsetTop - 99 : 0
+      });
+    }, 100);
   }
 
   render() {
@@ -58,22 +97,22 @@ class NavbarPage extends Component {
             <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
               <MDBNavbarNav className="nav-pills" left>
                 <MDBNavItem>
-                  <MDBNavLink link to="#" active={this.state.activePill === "1"} onClick={this.togglePills("1")} className="lucas-nav-bar-item">Home</MDBNavLink>
+                  <MDBNavLink link to="#home" active={this.state.activePill === "1"} onClick={this.togglePills("1", "home")} className="lucas-nav-bar-item">Home</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink link to="#portfolio" active={this.state.activePill === "2"} onClick={this.togglePills("2")} className="lucas-nav-bar-item">Portfolio</MDBNavLink>
+                  <MDBNavLink link to="#portfolio" active={this.state.activePill === "2"} onClick={this.togglePills("2", "portfolio")} className="lucas-nav-bar-item">Portfolio</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink link to="#about" active={this.state.activePill === "3"} onClick={this.togglePills("3")} className="lucas-nav-bar-item">About</MDBNavLink>
+                  <MDBNavLink link to="#about" active={this.state.activePill === "3"} onClick={this.togglePills("3", "about")} className="lucas-nav-bar-item">About</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink link to="#experience" active={this.state.activePill === "4"} onClick={this.togglePills("4")} className="lucas-nav-bar-item">Experience</MDBNavLink>
+                  <MDBNavLink link to="#experience" active={this.state.activePill === "4"} onClick={this.togglePills("4", "experience")} className="lucas-nav-bar-item">Experience</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink link to="#skills" active={this.state.activePill === "5"} onClick={this.togglePills("5")} className="lucas-nav-bar-item">Skills</MDBNavLink>
+                  <MDBNavLink link to="#skills" active={this.state.activePill === "5"} onClick={this.togglePills("5", "skills")} className="lucas-nav-bar-item">Skills</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink link to="#projects" active={this.state.activePill === "6"} onClick={this.togglePills("6")} className="lucas-nav-bar-item">Projects</MDBNavLink>
+                  <MDBNavLink link to="#projects" active={this.state.activePill === "6"} onClick={this.togglePills("6", "projects")} className="lucas-nav-bar-item">Projects</MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
               <MDBNavbarNav className="nav-flex-icons" right>

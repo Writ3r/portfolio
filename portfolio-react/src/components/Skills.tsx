@@ -6,7 +6,7 @@ import pic from "../assets/numberSmall.png";
 const Skills = () => {
   return (
     <MDBAnimation reveal type="fadeIn">
-      <section id="skills" className="anchor">
+      <section id="skills" className="pageAnchor">
         <h2 className="my-5 h3 text-center">Skills</h2>
         <div className="row features-small mb-5 mt-3 wow fadeIn">
           <div className="col-md-4">

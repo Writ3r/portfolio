@@ -4,7 +4,7 @@ import {  MDBAnimation } from "mdbreact";
 const AboutMe = () => {
   return (
     <MDBAnimation reveal type="fadeIn">
-      <section id="aboutMe" className="anchor">
+      <section id="about" className="pageAnchor">
         <h3 className="h3 text-center mb-5">About Me</h3>
         <div className="row wow fadeIn">
           <div className="col-lg-6 col-md-12 px-4">

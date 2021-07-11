@@ -49,7 +49,7 @@ const CarouselCenterInner = (props:CarouselCenterInnerInput) => {
 
 const CarouselPage = () => {
   return (
-      <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="carouselPage">
+      <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="carouselPage pageAnchor" id="home">
         <MDBCarouselInner>
           <MDBCarouselItem itemId="1">
             <MDBView>

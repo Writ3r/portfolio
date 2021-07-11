@@ -6,7 +6,7 @@ import pic from "../assets/work-731198_1920.jpg";
 const Portfolio = () => {
   return (
     <MDBAnimation reveal type="fadeIn">
-      <section id="portfolio" className="mt-5 anchor">
+      <section id="portfolio" className="mt-5 pageAnchor">
         <div className="row">
           <div className="col-md-6 mb-4">
             <img src={pic} className="img-fluid z-depth-1-half" alt="" />

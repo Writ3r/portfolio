@@ -20,7 +20,7 @@ class Experience extends Component {
   render() {
     return (
       <MDBAnimation reveal type="fadeIn">
-        <section id="experience" className="anchor">
+        <section id="experience" className="pageAnchor">
 
           <h2 className="my-5 h3 text-center">Experience</h2>
 

@@ -31,7 +31,7 @@ class Projects extends Component {
   render() {
     return (
       <MDBAnimation reveal type="fadeIn">
-        <section id="projects" className="anchor">
+        <section id="projects" className="pageAnchor">
           <h2 className="my-5 h3 text-center">Projects</h2>
           <div className="row wow fadeIn">
             <div className="col-lg-12 col-md-12 px-4">
