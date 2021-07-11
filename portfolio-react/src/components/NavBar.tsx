@@ -27,14 +27,15 @@ class NavbarPage extends Component {
 
   isInView(el:any) {
     const box = el.getBoundingClientRect();
-    return box.top < window.innerHeight && box.bottom >= 0;
+    return box.top <= window.innerHeight && box.bottom >= 0;
   }
 
   handleScroll = () => {
     //scroll pos in page
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-    var footer = document.querySelector("footer");
+    // @ts-ignore
+    var footer = document.querySelector("footer").lastElementChild;
     var footerInView = true ? footer && this.isInView(footer) : false
 
     // scrollspy since mdbootstrap requires pro version
