@@ -10,10 +10,10 @@ interface SkillInput {
 const Skill = (props:SkillInput) => {
   return (
     <MDBRow className="row about-me-item">
-      <MDBCol className="col-1 mr-3">
+      <MDBCol size="1" className="mr-3">
         <i className={props.icon}></i>
       </MDBCol>
-      <MDBCol className="col-10">
+      <MDBCol size="10">
         <h5 className="feature-title">{props.name}</h5>
         <p className="grey-text">{props.desc}</p>
       </MDBCol>
@@ -27,7 +27,7 @@ const AboutMe = () => {
       <section id="about" className="pageAnchor">
         <h3 className="h3 text-center mb-5">About Me</h3>
         <MDBRow className="row wow fadeIn">
-          <MDBCol className="col-lg-6 col-md-12 px-4">
+          <MDBCol lg="6" md="12" className="px-4">
             <Skill 
               name="Engineer" 
               desc="Engineering new and interesting projects is my jam. It's satisfying turning an idea into a design." 
@@ -41,7 +41,7 @@ const AboutMe = () => {
               desc="Problems exist to be solved. My goal is to help that process along." 
               icon="fas fa-graduation-cap fa-2x cyan-text animated pulse infinite" />
           </MDBCol>
-          <MDBCol className="col-lg-6 col-md-12">
+          <MDBCol lg="6" md="12">
             <Skill 
               name="Gamer" 
               desc="Destiny, League of Legends, Minecraft, etc. Have played, and love them all." 

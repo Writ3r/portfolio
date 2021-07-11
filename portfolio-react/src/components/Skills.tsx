@@ -17,10 +17,10 @@ interface SkillInput {
 const SkillArea = (props:SkillInput) => {
   return (
     <MDBRow>
-      <MDBCol className="col-2">
+      <MDBCol size="2">
         <i className="fas fa-check-circle fa-2x indigo-text animated pulse infinite"></i>
       </MDBCol>
-      <MDBCol className="col-10">
+      <MDBCol size="10">
         <h6 className="feature-title">{props.name}</h6>
         <p className="grey-text">
           {props.desc.line1}<br />
@@ -39,7 +39,7 @@ const Skills = () => {
       <section id="skills" className="pageAnchor">
         <h2 className="my-5 h3 text-center">Skills</h2>
         <MDBRow className="features-small mb-5 mt-3">
-          <MDBCol className="col-md-4">
+          <MDBCol md="4">
             <SkillArea 
               name="Java"
               desc={{line1:"4 years of experience",line2:"OSGI & Spring Boot frameworks",line3:"Service-oriented design"}}
@@ -57,10 +57,10 @@ const Skills = () => {
               desc={{line1:"2 years of experience",line2:"Flask, Dash, Tensorflow",line3:"Automation, Neural networks"}}
             />
           </MDBCol>
-          <MDBCol className="col-md-4 flex-center">
+          <MDBCol md="4" className="flex-center">
             <img src={pic} alt="Image of 0" className="z-depth-0 img-fluid d-none d-md-block" />
           </MDBCol>
-          <MDBCol className="col-md-4 mt-2">
+          <MDBCol md="4" className="mt-2">
             <SkillArea 
               name="Version Control"
               desc={{line1:"2 years of experience",line2:"Git",line3:"Tourtoise, Github Desktop"}}

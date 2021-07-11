@@ -48,10 +48,10 @@ class Portfolio extends Component {
       <MDBAnimation reveal type="fadeIn">
         <section id="portfolio" className="mt-5 pageAnchor">
           <MDBRow>
-            <MDBCol className="col-md-6 mb-4">
+            <MDBCol md="6" className="mb-4">
               <img src={pic} className="img-fluid z-depth-1-half" alt="" />
             </MDBCol>
-            <MDBCol className="col-md-6 mb-4">
+            <MDBCol md="6" className="mb-4">
               <h3 className="h3 mb-3">Portfolio</h3>
               <p>Here's a bit about <strong>myself</strong>, my <strong>projects</strong>, and my <strong>experience</strong>.</p>
               <p>Everyone likes to show off a little right?</p>
@@ -63,7 +63,7 @@ class Portfolio extends Component {
                 <strong> Let's hope these numbers keep growing right?</strong>
               </p>
               <p>
-              <strong>{this.state.secondsCoding}</strong> seconds coding projects is not enough!
+              <strong>{this.state.secondsCoding}</strong> seconds spent coding projects is not enough!
               </p>
               <MDBBtn target="_blank" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" color="grey">
                 RESUME DOC <i className="fas fa-download animated swing infinite ml-1"></i>

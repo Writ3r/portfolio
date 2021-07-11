@@ -103,7 +103,7 @@ interface PictureModalInput {
 class PictureModal extends React.Component<PictureModalInput> {
   render() {
     return (
-      // @ts-ignore
+      // @ts-ignore   (ignore since MD bootstrap's modal has a bug with TS)
       <MDBModal isOpen={this.props.modal} toggle={this.props.toggleModal} size="lg" centered >
           <MDBModalBody>
             <MDBCarousel activeItem={1} length={React.Children.count(this.props.children)} showControls={true} showIndicators={true}>
@@ -144,11 +144,11 @@ class Projects extends Component {
       <MDBAnimation reveal type="fadeIn">
         <section id="projects" className="pageAnchor">
           <h2 className="my-5 h3 text-center">Projects</h2>
-          <div className="row wow fadeIn">
-            <div className="col-lg-12 col-md-12 px-4">
-              <div className="row">
+          <MDBRow>
+            <MDBCol className="col-lg-12 col-md-12 px-4">
+              <MDBRow>
                 <Router>
-                  <div className="col-md-3">
+                  <MDBCol md="3">
                     <MDBNav className="flex-column lucas-pills nav-pills projects-pills" aria-orientation="vertical">
                       <MDBNavItem>
                         <MDBNavLink link to="#" active={this.state.activePill === "1"} onClick={this.togglePills("1")}>
@@ -171,8 +171,8 @@ class Projects extends Component {
                         </MDBNavLink>
                       </MDBNavItem>
                     </MDBNav>
-                  </div>
-                  <div className="col-md-9">
+                  </MDBCol>
+                  <MDBCol md="9">
                     <MDBTabContent activeItem={this.state.activePill}>
                       <MDBTabPane tabId="1" className={`fade ${this.state.activePill === "1" ? "show" : ""}`}>
                         <Project
@@ -279,11 +279,11 @@ class Projects extends Component {
                         </Project>
                       </MDBTabPane>
                     </MDBTabContent>
-                  </div>
+                  </MDBCol>
                 </Router>
-              </div>
-            </div>
-          </div>           
+              </MDBRow>
+            </MDBCol>
+          </MDBRow>           
         </section>
       </MDBAnimation>
     );

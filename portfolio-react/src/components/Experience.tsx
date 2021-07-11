@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {  MDBAnimation, MDBNav, MDBNavItem, MDBTabContent, MDBTabPane, MDBRow, MDBCol } from "mdbreact";
+import {  MDBAnimation, MDBNav, MDBNavItem, MDBTabContent, MDBTabPane } from "mdbreact";
 import MDBNavLink from "./MDB/NavLink";
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -57,9 +57,7 @@ class Experience extends Component {
     return (
       <MDBAnimation reveal type="fadeIn">
         <section id="experience" className="pageAnchor">
-
           <h2 className="my-5 h3 text-center">Experience</h2>
-
           <div className="row wow fadeIn">
             <div className="col-lg-12 col-md-12 px-4">
               <Router>
@@ -117,7 +115,6 @@ class Experience extends Component {
               </Router>
             </div>
           </div>
-
         </section>
       </MDBAnimation>
     );
