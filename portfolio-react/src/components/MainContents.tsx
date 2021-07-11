@@ -7,9 +7,6 @@ import Experience from './Experience';
 import Skills from './Skills';
 import Projects from './Projects';
 
-
-import pic from "../assets/work-731198_1920.jpg";
-
 const MainContents = () => {
   return (
     <main>
