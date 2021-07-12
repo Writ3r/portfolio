@@ -152,22 +152,22 @@ class Projects extends Component {
                     <MDBNav className="flex-column lucas-pills nav-pills projects-pills" aria-orientation="vertical">
                       <MDBNavItem>
                         <MDBNavLink link to="#" active={this.state.activePill === "1"} onClick={this.togglePills("1")}>
-                          Mailaway
+                          <i className="fas fa-envelope mr-2 blue-text animated jello infinite"></i>Mailaway
                         </MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
                         <MDBNavLink link to="#" active={this.state.activePill === "2"} onClick={this.togglePills("2")}>
-                          Master Plan
+                          <i className="fas fa-chart-pie mr-2 cyan-text animated jello infinite"></i>Master Plan
                         </MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
                         <MDBNavLink link to="#" active={this.state.activePill === "3"} onClick={this.togglePills("3")}>
-                          KSSPE Management
+                          <i className="fas fa-volleyball-ball mr-2 animated jello infinite"></i>KSSPE Management
                         </MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
                         <MDBNavLink link to="#" active={this.state.activePill === "4"} onClick={this.togglePills("4")}>
-                          Clothes Closet
+                          <i className="fas fa-tshirt mr-2 indigo-text animated jello infinite"></i>Clothes Closet
                         </MDBNavLink>
                       </MDBNavItem>
                     </MDBNav>

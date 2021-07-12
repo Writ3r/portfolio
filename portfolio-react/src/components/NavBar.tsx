@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse, MDBContainer} from "mdbreact";
 import MDBNavLink from "./MDB/NavLink";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 /*
 NOTES:
@@ -118,10 +118,15 @@ class NavbarPage extends Component {
               </MDBNavbarNav>
               <MDBNavbarNav className="nav-flex-icons" right>
                 <MDBNavItem>
-                  <MDBNavLink to="#!"><i className="fab fa-linkedin"></i></MDBNavLink>
+                  <a className="nav-link" href="https://www.linkedin.com/in/lucas-wing-314894104/" target="_blank">
+                    <i className="fab fa-linkedin"></i>
+                  </a>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="#!" className="border border-light rounded waves-effect waves-light"><i className="fab fa-github mr-2"></i>Github</MDBNavLink>
+                  <a href="https://github.com/Writ3r" className="nav-link border border-light rounded waves-effect waves-light"
+                    target="_blank">
+                    <i className="fab fa-github mr-2"></i>GitHub
+                  </a>
                 </MDBNavItem>
               </MDBNavbarNav>
             </MDBCollapse>
