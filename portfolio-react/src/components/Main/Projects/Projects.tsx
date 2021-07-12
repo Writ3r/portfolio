@@ -1,28 +1,28 @@
 import React, { Component } from "react";
 import {  MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBNav, MDBNavItem, MDBTabContent, MDBTabPane, MDBModal, MDBModalBody, MDBRow, MDBCol } from "mdbreact";
-import MDBNavLink from "./MDB/NavLink";
+import MDBNavLink from "../../MDB/NavLink";
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import pic from "../assets/clothescloset/ClothesClosetItem.png";
-import pic2 from "../assets/clothescloset/ClothesClosetMainMenue.png";
+import pic from "../../../assets/clothescloset/ClothesClosetItem.png";
+import pic2 from "../../../assets/clothescloset/ClothesClosetMainMenue.png";
 
-import pic3 from "../assets/ksspe/LoginScreen.png";
-import pic4 from "../assets/ksspe/KSSPEMainMenBetter.png";
+import pic3 from "../../../assets/ksspe/LoginScreen.png";
+import pic4 from "../../../assets/ksspe/KSSPEMainMenBetter.png";
 
-import pic5 from "../assets/mailaway/swagger-endpoints.png";
-import pic6 from "../assets/mailaway/create-account.png";
-import pic7 from "../assets/mailaway/portainer.png";
+import pic5 from "../../../assets/mailaway/swagger-endpoints.png";
+import pic6 from "../../../assets/mailaway/create-account.png";
+import pic7 from "../../../assets/mailaway/portainer.png";
 
-import pic8 from "../assets/masterplan/About.png";
-import pic9 from "../assets/masterplan/MasterDashboard.png";
-import pic10 from "../assets/masterplan/Assets.png";
+import pic8 from "../../../assets/masterplan/About.png";
+import pic9 from "../../../assets/masterplan/MasterDashboard.png";
+import pic10 from "../../../assets/masterplan/Assets.png";
 
-import ksspeERD from "../assets/ksspe/ERD.jpeg";
-import ksspeSeq from "../assets/ksspe/KSSPECompletedSeqDiagrams.pdf";
-import ksspeState from "../assets/ksspe/State.jpg";
+import ksspeERD from "../../../assets/ksspe/ERD.jpeg";
+import ksspeSeq from "../../../assets/ksspe/KSSPECompletedSeqDiagrams.pdf";
+import ksspeState from "../../../assets/ksspe/State.jpg";
 
-import clothesSeq from "../assets/clothescloset/Team6-Sequence.pdf";
-import clothesState from "../assets/clothescloset/stateDiagram.jpg";
+import clothesSeq from "../../../assets/clothescloset/Team6-Sequence.pdf";
+import clothesState from "../../../assets/clothescloset/stateDiagram.jpg";
 
 const Zoom = require('react-reveal/Zoom');
 

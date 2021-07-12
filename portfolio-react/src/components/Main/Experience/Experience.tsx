@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { MDBNav, MDBNavItem, MDBTabContent, MDBTabPane } from "mdbreact";
-import MDBNavLink from "./MDB/NavLink";
+import MDBNavLink from "../../MDB/NavLink";
 import { BrowserRouter as Router } from 'react-router-dom';
 
 const Zoom = require('react-reveal/Zoom');

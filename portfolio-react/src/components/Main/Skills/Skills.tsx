@@ -1,5 +1,5 @@
 import {  MDBRow, MDBCol  } from "mdbreact";
-import pic from "../assets/numberSmall.png";
+import pic from "../../../assets/numberSmall.png";
 
 const Zoom = require('react-reveal/Zoom');
 

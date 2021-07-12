@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { MDBRow, MDBCol } from "mdbreact";
-import MDBBtn from "./MDB/Button";
-import pic from "../assets/work-731198_1920.jpg";
+import MDBBtn from "../../MDB/Button";
+import pic from "../../../assets/work-731198_1920.jpg";
 const Zoom = require('react-reveal/Zoom');
 
 function secondsDiff(d1:Date, d2:Date) {

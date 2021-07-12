@@ -1,7 +1,7 @@
 import './assets/css/style.css';
 import Navbar from './components/NavBar';
 import Entry from './components/Entry';
-import MainContents from './components/MainContents';
+import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div>
         <Navbar />
         <Entry />
-        <MainContents />
+        <Main />
         <Footer />
     </div>
   );
