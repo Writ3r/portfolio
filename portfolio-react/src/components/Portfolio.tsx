@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import {  MDBAnimation, MDBRow, MDBCol } from "mdbreact";
+import { Component } from "react";
+import { MDBRow, MDBCol } from "mdbreact";
 import MDBBtn from "./MDB/Button";
 import pic from "../assets/work-731198_1920.jpg";
 const Zoom = require('react-reveal/Zoom');
@@ -65,10 +65,10 @@ class Portfolio extends Component {
               <p>
               <strong>{this.state.secondsCoding}</strong> seconds spent coding projects is not enough!
               </p>
-              <MDBBtn target="_blank" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" color="grey">
+              <MDBBtn target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" color="grey">
                 RESUME DOC <i className="fas fa-download animated swing infinite ml-1"></i>
               </MDBBtn>
-              <MDBBtn target="_blank" href="https://docs.google.com/document/d/1ca1rWlQpQJGOK2GYhp-mz5E8NWMic65b9PZSQFZu1Ss/edit?usp=sharing" color="grey">
+              <MDBBtn target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1ca1rWlQpQJGOK2GYhp-mz5E8NWMic65b9PZSQFZu1Ss/edit?usp=sharing" color="grey">
                 COVER LETTER <i className="fas fa-download animated swing infinite ml-1"></i>
               </MDBBtn>
             </MDBCol>

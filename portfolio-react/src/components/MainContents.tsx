@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import {  MDBContainer, MDBAnimation } from "mdbreact";
+import {  MDBContainer } from "mdbreact";
 
 import Portfolio from './Portfolio';
 import AboutMe from './AboutMe';

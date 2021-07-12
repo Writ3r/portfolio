@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {  MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBAnimation, MDBNav, MDBNavItem, MDBTabContent, MDBTabPane, MDBModal, MDBModalBody, MDBRow, MDBCol } from "mdbreact";
+import {  MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBNav, MDBNavItem, MDBTabContent, MDBTabPane, MDBModal, MDBModalBody, MDBRow, MDBCol } from "mdbreact";
 import MDBNavLink from "./MDB/NavLink";
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -219,7 +219,7 @@ class Projects extends Component {
                             The underlying idea is good, it just needs better execution and functionality."
                           pics={[pic8, pic9, pic10]}
                         >
-                          <a className="custom-link" href="https://www.master-plan.me/" target="_blank">
+                          <a className="custom-link" href="https://www.master-plan.me/" target="_blank" rel="noreferrer">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Website
                           </a><br/>
                         </Project>
@@ -239,19 +239,19 @@ class Projects extends Component {
                           to refine our Java skills before moving into the professional world."
                           pics={[pic3, pic4]}
                         >
-                          <a className="custom-link" href="https://github.com/Writ3r/KSSPE-Project" target="_blank">
+                          <a className="custom-link" href="https://github.com/Writ3r/KSSPE-Project" target="_blank" rel="noreferrer">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Github
                           </a><br/>
-                          <a className="custom-link" href={ksspeERD} target="_blank">
+                          <a className="custom-link" href={ksspeERD} target="_blank" rel="noreferrer">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> ERD
                           </a><br/>
-                          <a className="custom-link" href="https://docs.google.com/document/d/1xK-V8XTjA9ArEFn9ioepw284b4NFE3bnGWWVYr8B2Yc/edit?usp=sharing" target="_blank">
+                          <a className="custom-link" href="https://docs.google.com/document/d/1xK-V8XTjA9ArEFn9ioepw284b4NFE3bnGWWVYr8B2Yc/edit?usp=sharing" target="_blank" rel="noreferrer">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Use Cases
                           </a><br/>
-                          <a className="custom-link" href={ksspeSeq} target="_blank">
+                          <a className="custom-link" href={ksspeSeq} target="_blank" rel="noreferrer">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Sequence Diagrams
                           </a><br/>
-                          <a className="custom-link" href={ksspeState} target="_blank">
+                          <a className="custom-link" href={ksspeState} target="_blank" rel="noreferrer">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> State Diagram
                           </a><br/>
                         </Project>
@@ -273,16 +273,16 @@ class Projects extends Component {
                           was primarily a learning experience."
                           pics={[pic, pic2]}
                         >
-                          <a className="custom-link" href="https://github.com/ntyler1/ClothesClosetProject" target="_blank">
+                          <a className="custom-link" href="https://github.com/ntyler1/ClothesClosetProject" target="_blank" rel="noreferrer">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Github
                           </a><br/>
-                          <a className="custom-link" href="https://docs.google.com/document/d/1V_fU_oXI0yl9uo8K4Jrjk2z4EVXhlHpVYsNIxQbXJYs/edit?usp=sharing" target="_blank">
+                          <a className="custom-link" href="https://docs.google.com/document/d/1V_fU_oXI0yl9uo8K4Jrjk2z4EVXhlHpVYsNIxQbXJYs/edit?usp=sharing" target="_blank" rel="noreferrer">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Use Cases
                           </a><br/>
-                          <a className="custom-link" href={clothesSeq} target="_blank">
+                          <a className="custom-link" href={clothesSeq} target="_blank" rel="noreferrer">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Sequence Diagrams
                           </a><br/>
-                          <a className="custom-link" href={clothesState} target="_blank">
+                          <a className="custom-link" href={clothesState} target="_blank" rel="noreferrer">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> State Diagram
                           </a><br/>
                         </Project>

@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import {  MDBAnimation, MDBRow, MDBCol  } from "mdbreact";
+import {  MDBRow, MDBCol  } from "mdbreact";
 import pic from "../assets/numberSmall.png";
 
 const Zoom = require('react-reveal/Zoom');
@@ -59,7 +58,7 @@ const Skills = () => {
             />
           </MDBCol>
           <MDBCol md="4" className="flex-center">
-            <img src={pic} alt="Image of 0" className="z-depth-0 img-fluid d-none d-md-block" />
+            <img src={pic} alt="0" className="z-depth-0 img-fluid d-none d-md-block" />
           </MDBCol>
           <MDBCol md="4" className="mt-2">
             <SkillArea 

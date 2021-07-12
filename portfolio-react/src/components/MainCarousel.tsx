@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBAnimation } from "mdbreact";
 import MDBView from "./MDB/View";
 
@@ -38,7 +37,7 @@ const CarouselCenterInner = (props:CarouselCenterInnerInput) => {
           <p className="mb-4 d-none d-md-block">
             <strong>{props.explination}</strong>
           </p>
-          <a className="btn btn-outline-white btn-lg" href="https://github.com/Writ3r/portfolio" target="_blank">Source Code
+          <a className="btn btn-outline-white btn-lg" href="https://github.com/Writ3r/portfolio" target="_blank" rel="noreferrer">Source Code
             <i className="fas fa-graduation-cap ml-2"></i>
           </a>
         </div>

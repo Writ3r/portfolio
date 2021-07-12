@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { MDBWaves as Waves, MDBLink} from 'mdbreact';
+import { MDBWaves as Waves } from 'mdbreact';
 
 const View = props => {
   const [cursorPos, setCursorPos] = useState({});

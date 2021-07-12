@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import {  MDBAnimation, MDBRow, MDBCol } from "mdbreact";
+import {  MDBRow, MDBCol } from "mdbreact";
 const Zoom = require('react-reveal/Zoom');
 
 interface SkillInput {
