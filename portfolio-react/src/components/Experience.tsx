@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import {  MDBAnimation, MDBNav, MDBNavItem, MDBTabContent, MDBTabPane } from "mdbreact";
 import MDBNavLink from "./MDB/NavLink";
 import { BrowserRouter as Router } from 'react-router-dom';
+const Zoom = require('react-reveal/Zoom');
 
 interface Information {
   startingPos:string,
@@ -55,7 +56,7 @@ class Experience extends Component {
 
   render() {
     return (
-      <MDBAnimation reveal type="fadeIn">
+      <Zoom>
         <section id="experience" className="pageAnchor">
           <h2 className="my-5 h3 text-center">Experience</h2>
           <div className="row wow fadeIn">
@@ -116,7 +117,7 @@ class Experience extends Component {
             </div>
           </div>
         </section>
-      </MDBAnimation>
+      </Zoom>
     );
   }
 }

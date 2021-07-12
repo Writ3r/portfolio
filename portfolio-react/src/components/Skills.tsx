@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import {  MDBAnimation, MDBRow, MDBCol  } from "mdbreact";
-
 import pic from "../assets/numberSmall.png";
+
+const Zoom = require('react-reveal/Zoom');
 
 interface Description {
   line1:string,
@@ -35,7 +36,7 @@ const SkillArea = (props:SkillInput) => {
 
 const Skills = () => {
   return (
-    <MDBAnimation reveal type="fadeIn">
+    <Zoom>
       <section id="skills" className="pageAnchor">
         <h2 className="my-5 h3 text-center">Skills</h2>
         <MDBRow className="features-small mb-5 mt-3">
@@ -80,7 +81,7 @@ const Skills = () => {
           </MDBCol>
         </MDBRow>
       </section>
-    </MDBAnimation>
+    </Zoom>
   );
 }
 

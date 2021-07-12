@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import {  MDBAnimation, MDBRow, MDBCol } from "mdbreact";
 import MDBBtn from "./MDB/Button";
-
 import pic from "../assets/work-731198_1920.jpg";
+const Zoom = require('react-reveal/Zoom');
 
 function secondsDiff(d1:Date, d2:Date) {
   let secDiff = Math.floor( ( d2.getTime() - d1.getTime()) / 1000 );
@@ -45,7 +45,7 @@ class Portfolio extends Component {
   render() {
       const currTime = new Date();
       return (
-      <MDBAnimation reveal type="fadeIn">
+      <Zoom>
         <section id="portfolio" className="mt-5 pageAnchor">
           <MDBRow>
             <MDBCol md="6" className="mb-4">
@@ -74,7 +74,7 @@ class Portfolio extends Component {
             </MDBCol>
           </MDBRow>
         </section>
-      </MDBAnimation>
+      </Zoom>
     );
   }
 }

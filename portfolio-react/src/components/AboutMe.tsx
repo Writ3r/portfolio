@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {  MDBAnimation, MDBRow, MDBCol } from "mdbreact";
+const Zoom = require('react-reveal/Zoom');
 
 interface SkillInput {
   name:string,
@@ -23,7 +24,7 @@ const Skill = (props:SkillInput) => {
 
 const AboutMe = () => {
   return (
-    <MDBAnimation reveal type="fadeIn">
+    <Zoom>
       <section id="about" className="pageAnchor">
         <h3 className="h3 text-center mb-5">About Me</h3>
         <MDBRow className="row wow fadeIn">
@@ -57,7 +58,7 @@ const AboutMe = () => {
           </MDBCol>
         </MDBRow>
       </section>
-    </MDBAnimation>
+    </Zoom>
   );
 }
 

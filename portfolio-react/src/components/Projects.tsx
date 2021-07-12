@@ -24,6 +24,8 @@ import ksspeState from "../assets/ksspe/State.jpg";
 import clothesSeq from "../assets/clothescloset/Team6-Sequence.pdf";
 import clothesState from "../assets/clothescloset/stateDiagram.jpg";
 
+const Zoom = require('react-reveal/Zoom');
+
 interface Technology {
   name:string,
   desc:string
@@ -148,7 +150,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <MDBAnimation reveal type="fadeIn">
+      <Zoom>
         <section id="projects" className="pageAnchor">
           <h2 className="my-5 h3 text-center">Projects</h2>
           <MDBRow>
@@ -292,7 +294,7 @@ class Projects extends Component {
             </MDBCol>
           </MDBRow>           
         </section>
-      </MDBAnimation>
+      </Zoom>
     );
   }
 }
