@@ -36,11 +36,6 @@ html {
   }
 }
 
-/* allows higher scroll anchor positions */
-.anchor {
-  scroll-margin-top: 100px;
-}
-
 /* allows using md bootstrap's navbar color */
 .lucas-nav-bar-item.nav-link.active {
   background-color: rgba(255,255,255,.1) !important;
@@ -60,7 +55,6 @@ html {
 .projects-pills {
   margin-bottom:20px;
 }
-
 
 /* arbitrary margin for tab pane headers */
 .tab-pane-container {
