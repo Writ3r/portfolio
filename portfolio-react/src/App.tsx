@@ -1,14 +1,14 @@
 import './assets/css/style.css';
-import TopNavigation from './components/NavBar';
-import MainCarousel from './components/MainCarousel';
+import Navbar from './components/NavBar';
+import Entry from './components/Entry';
 import MainContents from './components/MainContents';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
-        <TopNavigation />
-        <MainCarousel />
+        <Navbar />
+        <Entry />
         <MainContents />
         <Footer />
     </div>

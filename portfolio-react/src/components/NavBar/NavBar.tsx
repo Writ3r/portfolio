@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse, MDBContainer} from "mdbreact";
-import MDBNavLink from "./MDB/NavLink";
+import MDBNavLink from "../MDB/NavLink";
 import { BrowserRouter as Router } from 'react-router-dom';
 
 class NavbarPage extends Component {
 
   state = {
     isOpen: false,
-    activePill: "home",
+    activeNav: "home",
     atTop: true
   };
 
@@ -44,21 +44,21 @@ class NavbarPage extends Component {
   */
   handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    let activePill = this.state.activePill;
+    let activeNav = this.state.activeNav;
 
     let lastEleInView = this.lastFooterEleInView()
     var section = document.querySelectorAll(".pageAnchor");
     section.forEach(function(e, i) {
       if (e instanceof HTMLElement) {
         if (e.offsetTop - 100 <= scrollTop || (lastEleInView && i == section.length - 1)) {
-          activePill = e.id
+          activeNav = e.id
         }
       }
     })
 
     this.setState({
       atTop: true ? (scrollTop === 0) : false,
-      activePill: activePill
+      activeNav: activeNav
     });
   }
 
@@ -93,22 +93,22 @@ class NavbarPage extends Component {
             <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
               <MDBNavbarNav left>
                 <MDBNavItem>
-                  <MDBNavLink link to="#home" active={this.state.activePill === "home"} onClick={this.togglePills("home")} className="lucas-nav-bar-item">Home</MDBNavLink>
+                  <MDBNavLink link to="#home" active={this.state.activeNav === "home"} onClick={this.togglePills("home")} className="lucas-nav-bar-item">Home</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink link to="#portfolio" active={this.state.activePill === "portfolio"} onClick={this.togglePills("portfolio")} className="lucas-nav-bar-item">Portfolio</MDBNavLink>
+                  <MDBNavLink link to="#portfolio" active={this.state.activeNav === "portfolio"} onClick={this.togglePills("portfolio")} className="lucas-nav-bar-item">Portfolio</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink link to="#about" active={this.state.activePill === "about"} onClick={this.togglePills("about")} className="lucas-nav-bar-item">About</MDBNavLink>
+                  <MDBNavLink link to="#about" active={this.state.activeNav === "about"} onClick={this.togglePills("about")} className="lucas-nav-bar-item">About</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink link to="#experience" active={this.state.activePill === "experience"} onClick={this.togglePills("experience")} className="lucas-nav-bar-item">Experience</MDBNavLink>
+                  <MDBNavLink link to="#experience" active={this.state.activeNav === "experience"} onClick={this.togglePills("experience")} className="lucas-nav-bar-item">Experience</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink link to="#skills" active={this.state.activePill === "skills"} onClick={this.togglePills("skills")} className="lucas-nav-bar-item">Skills</MDBNavLink>
+                  <MDBNavLink link to="#skills" active={this.state.activeNav === "skills"} onClick={this.togglePills("skills")} className="lucas-nav-bar-item">Skills</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink link to="#projects" active={this.state.activePill === "projects"} onClick={this.togglePills("projects")} className="lucas-nav-bar-item">Projects</MDBNavLink>
+                  <MDBNavLink link to="#projects" active={this.state.activeNav === "projects"} onClick={this.togglePills("projects")} className="lucas-nav-bar-item">Projects</MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
               <MDBNavbarNav className="nav-flex-icons" right>

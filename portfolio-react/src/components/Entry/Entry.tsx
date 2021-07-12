@@ -1,9 +1,11 @@
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBAnimation } from "mdbreact";
-import MDBView from "./MDB/View";
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem } from "mdbreact";
+import MDBView from "../MDB/View";
 
-import video from "../assets/Letter.webm";
-import video2 from "../assets/Blue.webm";
-import video3 from "../assets/Network.webm"
+import video from "../../assets/Letter.webm";
+import video2 from "../../assets/Blue.webm";
+import video3 from "../../assets/Network.webm"
+
+const Fade = require('react-reveal/Fade');
 
 interface VideoInput {
   videoUrl: string;
@@ -26,7 +28,7 @@ interface CarouselCenterInnerInput {
 const CarouselCenterInner = (props:CarouselCenterInnerInput) => {
   return (
     <div className="mask rgba-black-light d-flex justify-content-center align-items-center">
-      <MDBAnimation type="fadeIn">
+      <Fade bottom>
         <div className="text-center white-text mx-5">
           <h1 className="mb-4">
             <strong>{props.saying}</strong>
@@ -41,12 +43,12 @@ const CarouselCenterInner = (props:CarouselCenterInnerInput) => {
             <i className="fas fa-graduation-cap ml-2"></i>
           </a>
         </div>
-      </MDBAnimation>
+      </Fade>
     </div>
   );
 }
 
-const CarouselPage = () => {
+const Entry = () => {
   return (
       <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="carouselPage pageAnchor" id="home">
         <MDBCarouselInner>
@@ -85,4 +87,4 @@ const CarouselPage = () => {
   );
 }
 
-export default CarouselPage;
+export default Entry;

@@ -1,5 +1,5 @@
 import {  MDBAnimation, MDBFooter } from "mdbreact";
-import MDBBtn from "./MDB/Button";
+import MDBBtn from "../MDB/Button";
 
 const Footer = () => {
   return (
