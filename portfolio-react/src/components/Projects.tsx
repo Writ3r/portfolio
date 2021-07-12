@@ -17,6 +17,13 @@ import pic8 from "../assets/masterplan/About.png";
 import pic9 from "../assets/masterplan/MasterDashboard.png";
 import pic10 from "../assets/masterplan/Assets.png";
 
+import ksspeERD from "../assets/ksspe/ERD.jpeg";
+import ksspeSeq from "../assets/ksspe/KSSPECompletedSeqDiagrams.pdf";
+import ksspeState from "../assets/ksspe/State.jpg";
+
+import clothesSeq from "../assets/clothescloset/Team6-Sequence.pdf";
+import clothesState from "../assets/clothescloset/stateDiagram.jpg";
+
 interface Technology {
   name:string,
   desc:string
@@ -233,16 +240,16 @@ class Projects extends Component {
                           <a className="custom-link" href="https://github.com/Writ3r/KSSPE-Project" target="_blank">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Github
                           </a><br/>
-                          <a className="custom-link" href="./assets/ksspe/ERD.jpeg" target="_blank">
+                          <a className="custom-link" href={ksspeERD} target="_blank">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> ERD
                           </a><br/>
                           <a className="custom-link" href="https://docs.google.com/document/d/1xK-V8XTjA9ArEFn9ioepw284b4NFE3bnGWWVYr8B2Yc/edit?usp=sharing" target="_blank">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Use Cases
                           </a><br/>
-                          <a className="custom-link" href="./assets/ksspe/KSSPECompletedSeqDiagrams.pdf" target="_blank">
+                          <a className="custom-link" href={ksspeSeq} target="_blank">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Sequence Diagrams
                           </a><br/>
-                          <a className="custom-link" href="./assets/ksspe/State.jpg" target="_blank">
+                          <a className="custom-link" href={ksspeState} target="_blank">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> State Diagram
                           </a><br/>
                         </Project>
@@ -270,10 +277,10 @@ class Projects extends Component {
                           <a className="custom-link" href="https://docs.google.com/document/d/1V_fU_oXI0yl9uo8K4Jrjk2z4EVXhlHpVYsNIxQbXJYs/edit?usp=sharing" target="_blank">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Use Cases
                           </a><br/>
-                          <a className="custom-link" href="./assets/clothescloset/Team6-Sequence.pdf" target="_blank">
+                          <a className="custom-link" href={clothesSeq} target="_blank">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> Sequence Diagrams
                           </a><br/>
-                          <a className="custom-link" href="./assets/clothescloset/stateDiagram.jpg" target="_blank">
+                          <a className="custom-link" href={clothesState} target="_blank">
                             <i className="fas fa-link ml-2 animated pulse infinite"></i> State Diagram
                           </a><br/>
                         </Project>
