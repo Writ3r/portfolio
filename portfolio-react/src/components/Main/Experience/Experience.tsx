@@ -84,8 +84,8 @@ class Experience extends Component {
                   <MDBTabPane tabId="1" role="tabpanel" className={`fade ${this.state.activeItem === "1" ? "show" : ""}`}>
                     <ExperienceItem 
                       info={{startingPos:"Software Engineer 1 ", period:"June 2019 - PRESENT"}}
-                      respon="Primary responsibilty was building and mainting GXP Xplorer's Service infastructure. Secondary was doing cloud related changes, and making supporting webclient 
-                      changes if necessary. In addition, made dev support related tools to optimize efficiency during debugging and building."
+                      respon="Primary responsibilty is building and mainting GXP Xplorer's Service infastructure. Secondary is doing cloud related changes, and making supporting webclient 
+                      changes if necessary. In any down time, made dev support related tools to optimize efficiency during debugging and building."
                       awards="All of my performance reviews have had excellent scores thus far. In addition, achieved two Impact awards for my interest in our service infastructure, and cloud-related work during covid."
                       progress="Progressed significantly in my ability to write enterprise-grade code in both the server-side and in cloud environments.
                       On the service-side I've learned about REST endoints, messaging systems, dependency injection, and service-oriented architecture.
