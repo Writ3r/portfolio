@@ -57,13 +57,13 @@ class Portfolio extends Component {
               <p>Everyone likes to show off a little right?</p>
               <hr />
               <p>
-                <strong>{this.yearsDiff(Portfolio.projectStartDate, currTime)}</strong> years project experience,
-                <strong> {this.yearsDiff(Portfolio.workStartDate,  currTime)}</strong> years enterprise experience,
-                <strong> {this.yearsDiff(Portfolio.birthday,  currTime)}</strong> years of life experience.
+                <strong>{this.yearsDiff(Portfolio.projectStartDate, currTime).toLocaleString()}</strong> years project experience,
+                <strong> {this.yearsDiff(Portfolio.workStartDate, currTime).toLocaleString()}</strong> years enterprise experience,
+                <strong> {this.yearsDiff(Portfolio.birthday, currTime).toLocaleString()}</strong> years of life experience.
                 <strong> Let's hope these numbers keep growing right?</strong>
               </p>
               <p>
-              <strong>{this.state.secondsCoding}</strong> seconds spent coding projects is not enough!
+              <strong>{this.state.secondsCoding.toLocaleString()}</strong> seconds spent coding projects is not enough!
               </p>
               <MDBBtn target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" color="grey">
                 RESUME DOC <i className="fas fa-download animated swing infinite ml-1"></i>

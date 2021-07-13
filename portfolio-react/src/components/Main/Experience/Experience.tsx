@@ -85,7 +85,7 @@ class Experience extends Component {
                     <ExperienceItem 
                       info={{startingPos:"Software Engineer 1 ", period:"June 2019 - PRESENT"}}
                       respon="Primary responsibilty was building and mainting GXP Xplorer's Service infastructure. Secondary was doing cloud related changes, and making supporting webclient 
-                      changes if necessary. Also made dev support related tools to optimize efficiency during debugging and building."
+                      changes if necessary. In addition, made dev support related tools to optimize efficiency during debugging and building."
                       awards="All of my performance reviews have had excellent scores thus far. In addition, achieved two Impact awards for my interest in our service infastructure, and cloud-related work during covid."
                       progress="Progressed significantly in my ability to write enterprise-grade code in both the server-side and in cloud environments.
                       On the service-side I've learned about REST endoints, messaging systems, dependency injection, and service-oriented architecture.
@@ -95,11 +95,11 @@ class Experience extends Component {
                   <MDBTabPane tabId="2" role="tabpanel" className={`fade ${this.state.activeItem === "2" ? "show" : ""}`}>
                     <ExperienceItem 
                       info={{startingPos:"Summer Help", period:"July 2012 - August 2018"}}
-                      respon="Supporting the custodial staff in cleaning out the school district over the summer. Required teams of people working together to clean all classNameroom furnature, remove
-                      it from the classNamerooms, clean &amp; wax the floors, then set the classNameroom back up how it was previously laid out."
+                      respon="Supporting the custodial staff in cleaning out the school district over the summer. Required teams of people working together to clean all classroom furnature, 
+                      and clean + wax the floors. In addition, did some yard work as well if we had some extra time."
                       awards="None offered for this job. The reward was coming back the next year if you did well enough."
                       progress="Learned about working in a team-based environment to accomplish tasks which are far too large to accomplish on my own.
-                      I also learned humility. My co-workers here were amazing, some of the best, most hardworking people I've ever met. Just because
+                      I also learned humility. My co-workers were amazing. Some of the best, most hardworking people I've ever met. Just because
                       programming is a more in-demand field in job market, doesn't make it any more of less of a job than that of custodial staff."
                     />
                   </MDBTabPane>
