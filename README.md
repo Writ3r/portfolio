@@ -11,7 +11,7 @@ My personal portfolio in React.
 - Uses MDBootstrap to build the layout
 
 ## Bug workaround
-- Use some custom MDB components to workaround react-dom versions
+- Uses some custom MDB components to workaround react-dom versions
 
 ## Contributing
 I doubt anyone except potential employers will ever see this.
