@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import {  MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBNav, MDBNavItem, MDBTabContent, MDBTabPane, MDBModal, MDBModalBody, MDBRow, MDBCol } from "mdbreact";
+import {  MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBNav, MDBNavItem, MDBTabContent, MDBTabPane, MDBModal, MDBModalBody, MDBRow, MDBCol, MDBModalFooter } from "mdbreact";
 import MDBNavLink from "../../MDB/NavLink";
+import MDBBtn from "../../MDB/Button";
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import pic from "../../../assets/clothescloset/ClothesClosetItem.png";
@@ -110,17 +111,25 @@ interface PictureModalInput {
 }
 
 class PictureModal extends React.Component<PictureModalInput> {
+
+  toggleModal = () => {
+    this.props.toggleModal();
+  }
+
   render() {
     return (
       // @ts-ignore   (ignore since MD bootstrap's modal has a bug with TS)
-      <MDBModal isOpen={this.props.modal} toggle={this.props.toggleModal} size="lg" centered >
-          <MDBModalBody>
+      <MDBModal isOpen={this.props.modal} toggle={this.props.toggleModal} size="lg" backdrop={false} centered >
+          <MDBModalBody style={{ background: "#1c2331" }}>
             <MDBCarousel activeItem={1} length={React.Children.count(this.props.children)} showControls={true} showIndicators={true}>
               <MDBCarouselInner>
                 {this.props.children}
               </MDBCarouselInner>
             </MDBCarousel>
           </MDBModalBody>
+          <MDBModalFooter style={{ background: "#3f51b5" }}>
+            <MDBBtn color="grey" onClick={this.toggleModal}>Close</MDBBtn>
+          </MDBModalFooter>
       </MDBModal>
     );
   }

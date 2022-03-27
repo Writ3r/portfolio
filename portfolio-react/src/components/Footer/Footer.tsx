@@ -4,7 +4,7 @@ import MDBBtn from "../MDB/Button";
 const Footer = () => {
   return (
     <MDBAnimation reveal type="fadeIn">
-      <MDBFooter className="text-center font-small mt-4">
+      <MDBFooter className="text-center font-small mt-4" >
         <div className="pt-4">
           <MDBBtn className="btn-outline-white" href="https://docs.google.com/document/d/1XRYsCeIkxK-lsZblag1_hA39kfoHJFjL-Tlo2_ZkGwE/edit?usp=sharing" target="_blank" rel="noreferrer">
               Resume Doc <i className="fas fa-download ml-2 animated swing infinite"></i>
