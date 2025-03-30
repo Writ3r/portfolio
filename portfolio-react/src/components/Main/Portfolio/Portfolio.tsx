@@ -60,7 +60,7 @@ class Portfolio extends Component {
                 <strong>{this.yearsDiff(Portfolio.projectStartDate, currTime).toLocaleString()}</strong> years project experience,
                 <strong> {this.yearsDiff(Portfolio.workStartDate, currTime).toLocaleString()}</strong> years enterprise experience,
                 <strong> {this.yearsDiff(Portfolio.birthday, currTime).toLocaleString()}</strong> years of life experience.
-                <strong> Let's hope these numbers keep growing right?</strong>
+                <strong> Let's hope these numbers keep growing!</strong>
               </p>
               <p>
               <strong>{this.state.secondsCoding.toLocaleString()}</strong> seconds spent coding projects is not enough!

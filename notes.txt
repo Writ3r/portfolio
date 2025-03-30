@@ -1,5 +1,0 @@
-To get running:
-
-1. Install node
-2. npm run-script build
-3. npm run-script start
